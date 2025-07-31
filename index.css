@@ -1,0 +1,229 @@
+/* --------------------------------------
+   Behance Portfolio Style (Exact Theme Match)
+   Ref: https://www.behance.net/gallery/219565857
+-------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #111;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+header.nav-bar-section {
+  width: 100%;
+  padding: 20px 60px;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-links a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #0077ff;
+  width: 0%;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.main-container {
+  max-width: 1280px;
+  margin: 80px auto;
+  padding: 0 40px;
+}
+
+section {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.passport-holder {
+  margin-bottom: 30px;
+}
+
+.passport-holder img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+h1 span {
+  color: #0077ff;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 30px 0 20px;
+  color: #222;
+}
+
+p {
+  max-width: 720px;
+  margin: 0 auto 20px;
+  font-size: 17px;
+  color: #555;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.btn {
+  display: inline-block;
+  background: #0077ff;
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 60px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #005bcc;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  max-width: 700px;
+  padding: 14px;
+  margin: 10px auto;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  display: block;
+  font-size: 16px;
+  background: #fff;
+}
+
+form button {
+  display: block;
+  margin: 10px auto;
+  padding: 14px 34px;
+  background: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #005bcc;
+}
+
+footer {
+  background: #101010;
+  color: #f0f0f0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #bbb;
+  margin: 0 14px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .main-container {
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .passport-holder img {
+    width: 140px;
+    height: 140px;
+  }
+}
