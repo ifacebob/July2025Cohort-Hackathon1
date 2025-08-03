@@ -1,100 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IfaceTech Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IFACETECH Portfolio</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-    <header class="nav-bar-section">
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">IFACETECH</a>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+  <header class="nav-bar-section">
+    <nav>
+      <a href="index.html" class="logo">IFACETECH</a>
+      
+      <!-- Hamburger toggle input and label -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation links -->
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <section id="home">
+      <div class="passport-holder">
+        <img src="img/WhatsApp_Image_2025-08-03_at_21.56.43_0db8b39f-removebg-preview.png" alt="Profile Image" />
+      </div>
+      <div class="home-div" id="hero-content">
+      <h1>Hello, I'm <span>Ugochukwu Boniface Nwaobia</span></h1>
+      <h3>Web Developer</h3>
+      <p>I build stunning and exceptional digital experiences with clean, efficient code.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a passionate web developer who loves solving real-world problems with code. I focused on building modern, responsive, and visually appealing websites using HTML and CSS. My drive comes from the thrill of learning new technologies and using them to build useful, impactful applications.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills/Programming Languages</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="img/html.jpg" alt="HTML" />
+          <h3>HTML</h3>
+          <p>Semantic and accessible markup.</p>
         </div>
-    </header>
-
-    <main class="main-container">
-        <section id="home">
-            <div class="passport-holder">
-                <img src="/July2025Cohort-Hackathon1/img/my picture.jpg" alt="passport photograph">
-            </div>
-            <h1>Hi, I'm <span>Ugochukwu Boniface Nwaobia</span></h1>
-            <h2>Web Developer</h2>
-            <p>I build stunning and exceptional digital experiences with clean, efficient code.</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </section>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a passionate web developer who loves solving real-world problems with code. My drive comes from the thrill of learning new technologies and using them to build useful, impactful applications.</p>
-        </section>
-
-        <section id="skills">
-            <h2>Programming Languages</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Python</li>
-                <li>Django</li>
-            </ul>
-        </section>
-
-        <section id="education">
-            <h2>Educational Background</h2>
-            <p>Bachelor of Science in Computer Science Education<br>Michael Okpara University of Agriculture Umudike, Abia State, Nigeria</p>
-            <a href="/July2025Cohort-Hackathon1/cv/Nwaobia_Ugochukwu_Boniface_Current_CV.pdf" download class="btn">Download My CV</a>
-        </section>
-
-        <section id="interests">
-            <h2>Interests</h2>
-            <p>I'm deeply interested in software development, user interface design, and making technology accessible for all. I also enjoy learning about AI and automation tools that enhance productivity.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <strong>Portfolio Website:</strong> A responsive personal website built with HTML, CSS, and JavaScript. <a href="#">View Project</a>
-                </li>
-                <li>
-                    <strong>Task Manager App:</strong> A to-do list web app with task tracking features. <a href="#">View Project</a>
-                </li>
-                <li>
-                    <strong>Weather Dashboard:</strong> A weather app that fetches data from APIs. <a href="#">View Project</a>
-                </li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="https://formspree.io/f/your-id" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; <span id="year"></span> IfaceTech. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="https://github.com/ifacebob" target="_blank">GitHub</a>
-            <a href="https://x.com/Iface_Bobby" target="_blank">LinkedIn</a>
-            <a href="mailto:ugochukwubobby@gmail.com">Email</a>
+        <div class="card">
+          <img src="img/file-browser-css.webp" alt="CSS" />
+          <h3>CSS</h3>
+          <p>Responsive and modern UI styling.</p>
         </div>
-    </footer>
+        <div class="card">
+          <img src="img/GitHub-Logo.png" alt="Git" />
+          <h3>Git</h3>
+          <p>Version control and collaboration.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Sections -->
+    <section id="education">
+        <h2>Educational Background</h2>
+        <p>Bachelor of Science in Computer Science Education<br>Michael Okpara University of Agriculture Umudike, Abia State, Nigeria</p>
+        <a href="/July2025Cohort-Hackathon1/cv/Nwaobia_Ugochukwu_Boniface_Current_CV.pdf" download class="btn">Download My CV</a>
+    </section>
+
+    <!-- My Key Interest -->
+     <section id="interests">
+        <h2>Interests</h2>
+        <p>I'm deeply interested in software development, user interface design, and making technology accessible for all. I also enjoy learning about AI and automation tools that enhance productivity.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="img/student portfiolo.jpg" alt="Portfolio" />
+          <h3>Portfolio Site</h3>
+          <p>A responsive personal portfolio website built with HTML, CSS to showcase my skills and works.</p>
+        </div>
+        <div class="card">
+          <img src="img/240_F_1340819088_Cfp4g3ITd0hQStAwJR5mWne98ogXd6b7.jpg" alt="Form" />
+          <h3>Task Manager App</h3>
+          <p>A to-do list web app with task tracking features.</p>
+        </div>
+        <div class="card">
+          <img src="img/continue-on-mobile.webp" alt="Form" />
+          <h3>Form Design</h3>
+          <p>Clean and accessible form layout.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 IFACETECH. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">LinkedIn</a>
+      <a href="https://github.com/ifacebob/">GitHub</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
 </body>
-
 </html>
